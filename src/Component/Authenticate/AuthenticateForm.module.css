@@ -1,0 +1,120 @@
+.auth {
+  margin: 7rem 5rem 3rem auto;
+  width: 30rem;
+  /* max-width: rem; */
+  height: 30rem;
+  border-radius: 6px;
+  background-color: #156499; /*#38015c*/ /* #8a2b06; by #156499;  #5a1a01; by #053a5e; */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.auth h1 {
+  text-align: center;
+  color: white;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.formLabel {
+  display: block;
+  color: rgb(177, 167, 167);
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  margin-left: 0.5rem;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.control input {
+  font: inherit;
+  background-color: #f1e1fc;
+  color: #156499;
+  border-radius: 4px;
+  border: 1px solid white;
+  width: 100%;
+  text-align: left;
+  padding: 0.25rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.actions {
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions button {
+  cursor: pointer;
+  font: inherit;
+  color: white;
+  background-color: #023b61; /*#9f5ccc; by  #023b61;*/ /* hover #2691d8; button #023b61;*/
+  border: 1px solid #023b61;
+  border-radius: 4px;
+  padding: 0.5rem 2rem;
+}
+
+.actions button:hover {
+  background-color: #2691d8;
+  border-color: #2691d8; /* #873abb; by #2691d8;*/
+}
+
+.actions p {
+  position: absolute;
+}
+
+.actions .toggle {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: blue;
+  border: none;
+  padding: 0.15rem 1.5rem;
+}
+
+.actions .toggle:hover {
+  background-color: transparent;
+  color: #2691d8;
+}
+
+.passwordToggle {
+  color: grey;
+  position: absolute;
+  font-size: 1rem;
+  margin: 0.3rem 0 0 -1.4rem;
+}
+
+.control p {
+  position: absolute;
+  font-size: 0.9rem;
+  margin: -1rem 0 0 0rem;
+  color: #f00e0e;
+  align-self: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .auth {
+    margin: 7rem 5rem 3rem 2rem;
+    width: 20rem;
+    /* max-width: 60%; */
+    height: 30rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .formLabel {
+    margin-bottom: 0.2rem;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .control input {
+    width: 90%;
+    padding: 0.25rem;
+    margin-bottom: 1rem;
+  }
+}

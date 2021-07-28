@@ -1,0 +1,24 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  z-index: 0;
+}
+.main-image img {
+  width: 95%;
+  height: 30rem;
+  margin: 0 2rem;
+  position: relative;
+  top: 7rem;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .main-image img {
+    width: 75%;
+    height: 20rem;
+    margin: 0 4rem 2rem 2rem;
+  }
+}

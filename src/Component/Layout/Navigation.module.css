@@ -1,0 +1,78 @@
+.logo {
+  font-size: 2rem;
+  color: white;
+}
+
+.nav h2 {
+  display: none;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #88dfdf;
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+  color: #e6fcfc;
+}
+.logout {
+  font: inherit;
+  color: white; /* #8a2b06; by #156499;  #5a1a01; by #053a5e; */
+  cursor: pointer;
+  background-color: #023b61;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+}
+
+.logout:hover {
+  background-color: #2691d8; /* hover #2691d8; button #023b61;*/
+}
+@media only screen and (max-width: 768px) {
+  .nav ul {
+    flex-flow: column nowrap;
+    background-color: #023b61;
+    padding-top: 3.5rem;
+    height: 30rem;
+    width: 300px;
+    border-bottom-right-radius: 15px;
+  }
+  .nav h2 {
+    position: fixed;
+    top: 10px;
+    left: 80px;
+    z-index: 20;
+  }
+  .nav ul li {
+    padding: 18px 10px;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+  }
+  .nav.open {
+    transform: translateX(0%);
+    transition: transform 0.6s ease-in-out;
+  }
+  .nav h2 {
+    display: inherit;
+  }
+}

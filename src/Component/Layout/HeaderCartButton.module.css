@@ -1,0 +1,85 @@
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #023b61;
+  color: white;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:active {
+  background-color: #2691d8; /* #8a2b06; by #156499;  #5a1a01; by #053a5e; */
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 0.5rem;
+}
+
+.badge {
+  background-color: #1a72ad;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  background-color: #0b3a5a;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ytext {
+    display: none;
+  }
+  .button {
+    padding: 0.5rem 0.5rem;
+    flex-direction: column;
+    font-weight: normal;
+    margin-left: 0.5rem;
+  }
+
+  .icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .badge {
+    background-color: #1a72ad;
+    padding: 0.1rem 0.4rem;
+    border-radius: 25px;
+    margin-left: 0.1rem;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,22 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #156499; /* #8a2b06; by #156499;  #5a1a01; by #053a5e; */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+@media only screen and (max-width: 768px) {
+  .header h1 {
+    margin-left: 45px;
+    font-size: 1.5rem;
+  }
+}

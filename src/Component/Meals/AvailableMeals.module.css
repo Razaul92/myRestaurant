@@ -1,0 +1,50 @@
+.meals {
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+
+.meals ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mealsLoading {
+  text-align: center;
+  color: teal;
+  font-size: 3rem;
+}
+
+.mealsError {
+  text-align: center;
+  color: rgb(194, 5, 5);
+  font-size: 3rem;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.image {
+  width: 100%;
+  height: 28rem;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.image img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+}

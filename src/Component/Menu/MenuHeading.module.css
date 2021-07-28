@@ -1,0 +1,86 @@
+.menu {
+  margin-top: 7rem;
+  margin-left: 27%;
+  width: 35rem;
+  height: 7rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+.menu h1 {
+  position: absolute;
+  /* margin: auto; */
+  /* margin-left: 35%;
+  margin-top: 5rem; */
+  font-size: 5rem;
+  padding: 0 7rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: white;
+  z-index: 0;
+  animation: color 1s ease-in-out infinite;
+}
+
+@keyframes color {
+  0% {
+    color: #e74c3c;
+    font-size: 5rem;
+  }
+  25% {
+    color: rgb(71, 255, 102);
+    font-size: 4.8rem;
+  }
+  50% {
+    color: rgb(23, 75, 172);
+    font-size: 4.5rem;
+  }
+  75% {
+    color: rgb(136, 138, 11);
+    font-size: 4.8rem;
+  }
+  100% {
+    color: #ece4e3;
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    margin-top: 7rem;
+    margin-left: 10%;
+    width: 22rem;
+    height: 7rem;
+    background-color: white;
+    border-radius: 1rem;
+  }
+  .menu h1 {
+    position: absolute;
+    /* margin: auto; */
+    /* margin-left: 35%;
+  margin-top: 5rem; */
+    font-size: 3rem;
+    padding: 1rem 4.5rem;
+    animation: color 1s ease-in-out infinite;
+  }
+  @keyframes color {
+    0% {
+      color: #e74c3c;
+      font-size: 3rem;
+    }
+    25% {
+      color: rgb(71, 255, 102);
+      font-size: 2.8rem;
+    }
+    50% {
+      color: rgb(23, 75, 172);
+      font-size: 2.6rem;
+    }
+    75% {
+      color: rgb(136, 138, 11);
+      font-size: 2.8rem;
+    }
+    100% {
+      color: #ece4e3;
+      font-size: 3rem;
+    }
+  }
+}
